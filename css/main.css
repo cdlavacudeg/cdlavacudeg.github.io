@@ -1,11 +1,18 @@
 :root{
-    /*Colores*/
+
+    /*Fonts*/
+    --ff-primary:'Source Sans Pro', sans-serif;
+    --ff-secondary:'Source Sans Pro', sans-serif;
+    /*Colors*/
     --blue-sapphire: #065d7aff;
     --teal-blue: #2e7e99ff;
     --cg-blue: #0c7fa6ff;
     --cyan-process: #34bfedff;
     --midnight-green-eagle-green: #1d5263ff;
     --warm-black:#2E2E2E;
+    --just-white:#fff;
+    --black:#000;
+    --gray:#b4b4b4;
 }
 *{
     box-sizing: border-box;
@@ -15,5 +22,78 @@
 
 html{
     font-size: 62.5%;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--ff-primary);
 }
+
+/*header*/
+
+header nav{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    font-size: 1.6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+header .nav-logo{
+    display: inline-block;
+    padding: 15px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.8rem;  
+}
+
+
+header .nav--list{
+    list-style: none;
+    display: none;
+}
+
+.nav-menu {
+    overflow: hidden;
+    width: 100%;
+}
+.nav-menu .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: var(--just-white);
+    border: none;
+    font-size: 2rem;
+}
+/*Toggle-nav*/
+
+
+.nav-menu.responsive .nav--list{
+    display: block;
+}
+
+
+
+.nav-menu a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: var(--warm-black);
+    color: var(--just-white);
+}
+
+.nav-menu a:hover {
+    background-color: var(--gray);
+    color: var(--black);
+}
+
+
+
+
+
+  
+/*header*/

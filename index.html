@@ -4,16 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="nav-logo" id="navLogo"> 
+                &lt; cdlavacudeg / &gt;
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <button class="nav-toggle" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="nav--list">
+                    <li> <a href="#home">Home</a></li>
+                    <li> <a href="#services">My Services</a></li>
+                    <li> <a href="#about">About me</a></li>
+                    <li> <a href="#work">My Work</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-home" id="home">
+            <h1>Hi,I am <br> <strong>Cristian Lavacude</strong></h1>
+            <p>Full stack Web Developer</p>
+            <img src="" alt="avatar of Cristian Lavacude">
+        </section>
+
+
+        <section class="main-services" id="services">
+
+        </section>
+
+        <section class="main-about" id="about">
+
+        </section>
+
+        <section class="main-myWork" id="work">
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navMenu");
+          if (x.className === "nav-menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav-menu";
+          };
+
+        }
+        </script>
 </body>
 </html>
