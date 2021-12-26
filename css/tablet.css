@@ -1,0 +1,152 @@
+/*NavBar*/
+header nav{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .nav-logo{
+    display: inline;
+}
+
+
+header .nav-list{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-menu{
+    overflow: visible;
+    width: 50%;
+}
+
+.nav-menu.responsive .nav--list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-menu .nav--list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nav-menu .nav-toggle{
+    display: none;
+}
+
+.nav-menu a {
+    background-color: var(--just-white);
+    color: var(--black);
+}
+
+.nav-menu a:hover {
+    background-color: #f8f8f8;
+    font-weight: bolder;
+}
+/*NavBar*/
+
+/*Home Section*/
+.main-home{
+    position: relative;
+    flex-direction: row;
+    justify-content:center;
+    align-content: center;
+    width: 100%;
+    align-items: center;
+    overflow: visible;
+}
+
+.main-home img{
+    display: block;
+    background-color: var(--just-white);
+    order: -1;
+    margin: 30px 0;
+    z-index: 2;
+}
+
+.main-home p{
+    position: relative;
+    left: -80%;
+    width: 180%;
+    text-align: center;
+    padding-left: 90%;
+    margin-left: 10px;
+}
+
+.main-home h1{
+    width: 100%;
+    margin: 15px 10px;
+}
+/* Home Section*/
+
+/*Services Section*/
+.services-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.service{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Services Section*/
+
+/*About Section*/
+.main-about{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    width: 70%;
+    margin: 5% 0;
+    padding: 0;
+    overflow: visible;
+}
+
+.about--title-description{
+    position: relative;
+    height: auto;
+    left: 10%;
+    width: 120%;
+    text-align: center;
+    padding-right:60%;
+    padding-left: 20%;
+}
+.main-about .about--img{
+    width: 40%;
+    height: 100%;
+    max-width: 290px;
+    max-height: 360px ;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    right: -27%;
+    order: 1;
+    z-index: 1;
+}
+
+.about--body{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+/*About Section*/
+
+
+/*Works Section*/
+.works-container{
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work-card{
+    width: 32%;
+    margin: 20px 0.5%;
+}
+/*Works Section*/
