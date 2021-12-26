@@ -259,7 +259,63 @@ header .nav--list{
     font-weight: 300;
     line-height: 2.4rem;
     color: #303030;
+    margin: 0 auto 30px;
 }
 /*About Section*/
+
+/*My Work Section*/
+.main-work{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--warm-black);
+}
+
+.main-work .work--title{
+    width: 320pxh;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 5rem;
+    color: var(--just-white);
+    margin: 60px auto 30px;
+}
+
+.work--title-description{
+    width: 268px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3rem;
+    color: var(--cyan-process);
+    margin: 0 auto 30px;
+}
+
+.works-container{
+    width: 80%;
+    min-width: 270px;
+}
+
+.work-card{
+    width: 100%;
+    margin: 15px auto;
+}
+
+.work-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.work-card p{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: left;
+    color: var(--gray);
+    margin: 5px auto 30px;
+}
+/*My Work Section*/
+
 
 
