@@ -310,12 +310,43 @@ header .nav--list{
 
 .work-card p{
     font-size: 1.6rem;
-    line-height: 1.8rem;
-    text-align: left;
+    line-height: 2rem;
+    font-weight: lighter;
+    text-align: center;
     color: var(--gray);
     margin: 5px auto 30px;
 }
 /*My Work Section*/
+footer{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2{
+    margin: 30px auto;
+    font-size: 3rem;
+    color: var(--cyan-process);
+}
+
+footer .contact-links{
+    width: 120px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 30px;
+}
+
+footer .contact-links a{
+    text-decoration: none;
+    color: var(--blue-sapphire);
+}
+footer .contact-links a:hover{
+    color: var(--cyan-process);
+}
 
 
 
