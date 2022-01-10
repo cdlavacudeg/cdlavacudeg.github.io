@@ -138,10 +138,11 @@ header .nav--list{
 }
 .main-home img{
     width: 290px;
-    height: 290px;
+    height: auto;
     margin: 0 auto 60px auto;
     box-shadow: 7px 6px 16px 4px rgba(89,73,30,0.16);
     border: 0.5px solid var(--gray);
+    padding: 5px;
 }
 /*Home Section*/
 
@@ -257,10 +258,11 @@ header .nav--list{
 .main-about .about--img{
     width: 290px;
     height: 360px;
-    background-image: url('../assets/img/Picture2.jpg');
+    background-image: url('../assets/img/avatar.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: var(--just-white);
     margin: 0 auto 60px auto;
     box-shadow: 3px 1px 4px 2px rgba(89,73,30,0.16);
     border-radius: 30px;
@@ -319,6 +321,9 @@ header .nav--list{
 
 .work-card img{
     width: 100%;
+    height: auto;
+    max-height: 165px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
