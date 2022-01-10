@@ -321,8 +321,8 @@ header .nav--list{
 
 .work-card img{
     width: 100%;
-    height: auto;
-    max-height: 165px;
+    height: 100%;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 5px;
 }
