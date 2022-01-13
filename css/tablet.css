@@ -139,6 +139,8 @@ header .nav-list{
 .works-container{
     width: 100%;
     max-width: 90%;
+    height: auto;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -148,5 +150,9 @@ header .nav-list{
 .work-card{
     width: 32%;
     margin: 20px 0.5%;
+}
+
+.work-card img{
+    max-height: 230px;
 }
 /*Works Section*/
