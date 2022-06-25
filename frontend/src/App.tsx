@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import { About,Footer,Header,Skills, Testimonial, Work } from "./containers";
+import { About, Footer, Header, Skills, Testimonial, Work } from './containers'
 import { Navbar } from './components'
 
-const App:React.FC = ()=> {
+const App: React.FC = () => {
   return (
-    <div className="app">
+    <div className='app'>
       <Navbar />
       <Header />
       <About />
@@ -14,7 +14,7 @@ const App:React.FC = ()=> {
       <Testimonial />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
