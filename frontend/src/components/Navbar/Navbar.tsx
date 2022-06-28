@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import './Navbar.scss'
 
 export const Navbar: React.FC = () => {
-  const navbarList: string[] = ['Home', 'About', 'Work', 'Skills', 'Contact']
+  const navbarList: string[] = ['home', 'about', 'work', 'skills', 'contact']
   const [toggle, setToggle] = useState<boolean>(false)
 
   return (

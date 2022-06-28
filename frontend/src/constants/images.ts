@@ -17,6 +17,8 @@ import redux from '../assets/redux.png'
 import sass from '../assets/sass.png'
 import typescript from '../assets/typescript.png'
 import vue from '../assets/vue.png'
+import mongo from '../assets/mongo.png'
+import express from '../assets/express.png'
 
 import about01 from '../assets/about01.png'
 import about02 from '../assets/about02.png'
@@ -57,6 +59,8 @@ const images: { [key: string]: string } = {
   sass,
   typescript,
   vue,
+  mongo,
+  express,
   about01,
   about02,
   about03,

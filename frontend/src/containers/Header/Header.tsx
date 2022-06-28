@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { images } from '../../constants'
-import './Header.tsx'
+import './Header.scss'
 
 const scaleVariants = {
   whileInView: {
@@ -14,11 +14,11 @@ const scaleVariants = {
   },
 }
 
-const skillsBubles = [images.typescript, images.api, images.node]
+const skillsBubles = [images.express, images.node, images.mongo]
 
 export const Header: React.FC = () => {
   return (
-    <div className='app_header app__flex'>
+    <div id='home' className='app__header app__flex'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -32,11 +32,10 @@ export const Header: React.FC = () => {
               <h1 className='head-text'>Cristian</h1>
             </div>
           </div>
-        </div>
-
-        <div className='tag-cmp app__flex'>
-          <p className='p-text'>Engineer</p>
-          <p className='p-text'>Web Developer</p>
+          <div className='tag-cmp app__flex'>
+            <p className='p-text'>Engineer</p>
+            <p className='p-text'>Web Developer</p>
+          </div>
         </div>
       </motion.div>
 
