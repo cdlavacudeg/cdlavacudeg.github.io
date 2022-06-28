@@ -1,6 +1,6 @@
 import React from 'react'
 
 // import './Footer.scss'
-export const Footer = (props: {}) => {
+export const Footer:React.FC = () => {
   return <div>Footer</div>
 }
