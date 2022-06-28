@@ -1,4 +1,99 @@
-* {
+:root {
+  /*Fonts*/
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', sans-serif;
+  /*Colors*/
+  --blue-sapphire: #065d7aff;
+  --teal-blue: #2e7e99ff;
+  --cg-blue: #0c7fa6ff;
+  --cyan-process: #34bfedff;
+  --midnight-green-eagle-green: #1d5263ff;
+  --warm-black: #2e2e2e;
+  --just-white: #fff;
+  --black: #000;
+  --gray: #b4b4b4;
+}
+/* --------------- */
+/* Reset           */
+/* --------------  */
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/*Box sizing rules*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* use of rem 1.6rem = 16px*/
+html {
+  font-size: 62.5%;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Reset Margins*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
   margin: 0;
-  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+/* set up the body */
+body {
+  font-family: var(--ff-primary);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 320px;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* make forms easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
