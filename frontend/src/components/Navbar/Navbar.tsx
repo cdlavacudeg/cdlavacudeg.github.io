@@ -2,34 +2,20 @@ import React from 'react'
 import './Navbar.scss'
 
 export const Navbar: React.FC = () => {
+  const navbarList = ['Home', 'About', 'Work', 'Skills', 'Contact']
   return (
-    <nav>
-      <div className='nav-logo' id='navlogo'>
-        &lt; cdlavacudeg / &gt;
-      </div>
-      <div className='nav-menu' id='navMenu'>
-        <button className='nav-toggle'>
-          <i className='fa fa-bars'></i>
-        </button>
-        <ul className='nav--list'>
-          <li>
-            {' '}
-            <a href='#home'>Home</a>
-          </li>
-          <li>
-            {' '}
-            <a href='#services'>My Services</a>
-          </li>
-          <li>
-            {' '}
-            <a href='#about'>About me</a>
-          </li>
-          <li>
-            {' '}
-            <a href='#work'>My Work</a>
-          </li>
-        </ul>
-      </div>
+    <nav className='app__navbar'>
+      <div className='app__navbar-logo'>&lt; cdlavacudeg / &gt;</div>
+      <ul className='app__navbar-links'>
+        {navbarList.map((item, index) => {
+          return (
+            <li className='app__flex p-text' key={index}>
+              <div />
+              <a href={`#${item}`}>{item}</a>
+            </li>
+          )
+        })}
+      </ul>
     </nav>
   )
 }

@@ -3,15 +3,23 @@
   --ff-primary: 'Source Sans Pro', sans-serif;
   --ff-secondary: 'Source Code Pro', sans-serif;
   /*Colors*/
-  --blue-sapphire: #065d7aff;
-  --teal-blue: #2e7e99ff;
-  --cg-blue: #0c7fa6ff;
-  --cyan-process: #34bfedff;
-  --midnight-green-eagle-green: #1d5263ff;
-  --warm-black: #2e2e2e;
-  --just-white: #fff;
-  --black: #000;
-  --gray: #b4b4b4;
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+
+  /* --blue-sapphire: #065d7aff; */
+  /* --teal-blue: #2e7e99ff; */
+  /* --cg-blue: #0c7fa6ff; */
+  /* --cyan-process: #34bfedff; */
+  /* --midnight-green-eagle-green: #1d5263ff; */
+  /* --warm-black: #2e2e2e; */
+  /* --just-white: #fff; */
+  /* --black: #000; */
+  /* --gray: #b4b4b4; */
 }
 /* --------------- */
 /* Reset           */
