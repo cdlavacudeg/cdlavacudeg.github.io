@@ -71,6 +71,7 @@ h6 {
 }
 /* set up the body */
 body {
+  background-color: var(--primary-color);
   font-family: var(--ff-primary);
   font-size: 1.6rem;
   line-height: 1.5;

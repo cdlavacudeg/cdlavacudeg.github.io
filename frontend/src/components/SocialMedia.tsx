@@ -1,7 +1,7 @@
 import React from 'react'
-import {BsLinkedin, BsGithub} from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
-export const SocialMedia:React.FC = () => {
+export const SocialMedia: React.FC = () => {
   return (
     <div className='app__social'>
       <div>
@@ -13,4 +13,3 @@ export const SocialMedia:React.FC = () => {
     </div>
   )
 }
-
