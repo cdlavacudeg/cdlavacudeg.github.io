@@ -22,7 +22,34 @@ const portfolioItems: WorkItem[] = [
     description: 'App educativa NoCountry',
     name: 'Backend Interact',
     tags: ['Backend'],
-    imgUrl: images.about,
+    imgUrl: images.about01,
+    projectLink: 'https://github.com/cdlavacudeg',
+    codeLink: 'https://github.com/cdlavacudeg',
+  },
+  {
+    title: 'Interact App',
+    description: 'App educativa NoCountry',
+    name: 'Backend Interact',
+    tags: ['Backend'],
+    imgUrl: images.about01,
+    projectLink: 'https://github.com/cdlavacudeg',
+    codeLink: 'https://github.com/cdlavacudeg',
+  },
+  {
+    title: 'Interact App',
+    description: 'App educativa NoCountry',
+    name: 'Backend Interact',
+    tags: ['Frontend'],
+    imgUrl: images.about01,
+    projectLink: 'https://github.com/cdlavacudeg',
+    codeLink: 'https://github.com/cdlavacudeg',
+  },
+  {
+    title: 'Interact App',
+    description: 'App educativa NoCountry',
+    name: 'Backend Interact',
+    tags: ['Backend'],
+    imgUrl: images.about01,
     projectLink: 'https://github.com/cdlavacudeg',
     codeLink: 'https://github.com/cdlavacudeg',
   },
@@ -66,7 +93,7 @@ const Work: React.FC = () => {
               key={index}
               onClick={() => handleWorkFilter(filter)}
               className={`app__work-filter-item app__flex p-text ${
-                activeFilter === filter ? 'item-active' : ' '
+                activeFilter === filter ? 'item-active' : ''
               }`}
             >
               {filter}
@@ -130,4 +157,4 @@ const Work: React.FC = () => {
   )
 }
 
-export default AppWrap(Work,'work','app__primarybg')
+export default AppWrap(Work, 'work', 'app__primarybg')
