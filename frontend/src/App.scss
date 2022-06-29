@@ -23,6 +23,14 @@
   }
 }
 
+.app__whitebg {
+  background-color: var(--white-color);
+}
+
+.app__primarybg {
+  background-color: var(--primary-color);
+}
+
 .head-text {
   font-size: 4.4rem;
   font-weight: 800;
@@ -77,9 +85,10 @@
 
   padding: 1.6rem;
 
-  div {
+  a {
     width: 40px;
     height: 40px;
+    cursor: pointer;
     border-radius: 50%;
     background-color: var(--white-color);
     margin: 0.4rem 0;

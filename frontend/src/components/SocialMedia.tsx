@@ -4,12 +4,12 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 export const SocialMedia: React.FC = () => {
   return (
     <div className='app__social'>
-      <div>
+      <a href='https://www.linkedin.com/in/cdlavacudeg/' target='_blank' rel='noopener noreferrer'>
         <BsLinkedin />
-      </div>
-      <div>
+      </a>
+      <a href='https://github.com/cdlavacudeg' target='_blank' rel='noopener noreferrer'>
         <BsGithub />
-      </div>
+      </a>
     </div>
   )
 }

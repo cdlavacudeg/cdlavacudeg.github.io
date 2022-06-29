@@ -1,1 +1,1 @@
-export {AppWrap} from './AppWrap'
+export { AppWrap } from './AppWrap'

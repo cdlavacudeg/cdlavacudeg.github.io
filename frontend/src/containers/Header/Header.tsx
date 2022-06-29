@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { images } from '../../constants'
+import { AppWrap } from '../../wrapper'
 import './Header.scss'
 
 const scaleVariants = {
@@ -16,7 +17,7 @@ const scaleVariants = {
 
 const skillsBubles = [images.express, images.node, images.mongo]
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <div id='home' className='app__header app__flex'>
       <motion.div
@@ -71,3 +72,5 @@ export const Header: React.FC = () => {
     </div>
   )
 }
+
+export default AppWrap(Header, 'home')

@@ -2,8 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { images } from '../../constants'
 import './About.scss'
+import { AppWrap } from '../../wrapper'
 
-export const About: React.FC = () => {
+const About: React.FC = () => {
   interface AboutItem {
     title: string
     description: string
@@ -48,3 +49,5 @@ export const About: React.FC = () => {
     </div>
   )
 }
+
+export default AppWrap(About, 'about', 'app__whitebg')
