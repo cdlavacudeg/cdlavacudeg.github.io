@@ -29,9 +29,44 @@ const skillsList: SkillItem[] = [
     bgColor: 'var(--primary-color)',
     icon: images.node,
   },
+  {
+    name: 'NodeJs',
+    bgColor: 'var(--primary-color)',
+    icon: images.node,
+  },
+  {
+    name: 'NodeJs',
+    bgColor: 'var(--primary-color)',
+    icon: images.node,
+  },
+  {
+    name: 'NodeJs',
+    bgColor: 'var(--primary-color)',
+    icon: images.node,
+  },
 ]
 
 const experienceList: ExperienceItem[] = [
+  {
+    year: '2020',
+    works: [
+      {
+        name: 'Frontend Developer',
+        company: 'Google',
+        desc: 'Frontend developer of a little app',
+      },
+    ],
+  },
+  {
+    year: '2020',
+    works: [
+      {
+        name: 'Frontend Developer',
+        company: 'Google',
+        desc: 'Frontend developer of a little app',
+      },
+    ],
+  },
   {
     year: '2020',
     works: [
@@ -47,11 +82,12 @@ const experienceList: ExperienceItem[] = [
 const Skills: React.FC = () => {
   const [experiences, setExperiences] = useState<ExperienceItem[]>([])
   const [skills, setSkills] = useState<SkillItem[]>([])
+  const [tooltip, showTooltip] = useState<boolean>(true)
 
   useEffect(() => {
     setExperiences(experienceList)
     setSkills(skillsList)
-  },[])
+  }, [])
 
   return (
     <div id='skills' className='app__skills'>
@@ -59,18 +95,15 @@ const Skills: React.FC = () => {
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>
-          {skills.map((skill,index)=>{
+          {skills.map((skill, index) => {
             return (
               <motion.div
-                whileInView={{opacity:[0,1]}}
-                transition={{duration:0.5}}
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 0.5 }}
                 className='app__skills-item app__flex'
                 key={index}
               >
-                <div
-                  className='app__flex'
-                  style={{backgroundColor:skill.bgColor}}
-                >
+                <div className='app__flex' style={{ backgroundColor: skill.bgColor }}>
                   <img src={skill.icon} alt={skill.name} />
                 </div>
                 <p className='p-text'>{skill.name}</p>
@@ -80,52 +113,50 @@ const Skills: React.FC = () => {
         </motion.div>
 
         <div className='app__skills-exp'>
-          {experiences.map((exp,index)=>(
-            <motion.div
-              className='app__skills-exp-item'
-              key={index}
-            >
+          {experiences.map((exp, index) => (
+            <motion.div className='app__skills-exp-item' key={index}>
               <div className='app__skills-exp-year'>
                 <p className='bold-text'>{exp.year}</p>
               </div>
 
               <motion.div className='app__skills-exp-works'>
-                {
-                exp.works.map((work,index)=>(
+                {exp.works.map((work, index) => (
                   <>
                     <motion.div
-                      whileInView={{opacity:[0,1]}}
-                      transition={{duration:0.5}}
-                      className='app__skills-exp-work'
-                      data-tip
-                      data-for={work.name}
+                      whileInView={{ opacity: [0, 1] }}
+                      transition={{ duration: 0.5 }}
+                      className='app__skills-exp-w<F12><F12>ork'
+                      data-tip=''
+                      data-for={`${work.name}${index}`}
+                      onMouseEnter={() => showTooltip(true)}
+                      onMouseLeave={() => {
+                        showTooltip(false)
+                        setTimeout(() => showTooltip(true), 0.01)
+                      }}
                       key={index}
                     >
                       <h4 className='bold-text'>{work.name}</h4>
                       <p className='p-text'>{work.company}</p>
                     </motion.div>
-                    <ReactTooltip
-                      id={work.name}
-                      effect="solid"
-                      arrowColor='#fff'
-                      className='skills-tooltip'
-                    >
-                      {work.desc}
-                    </ReactTooltip>
+                    {tooltip && (
+                      <ReactTooltip
+                        id={`${work.name}${index}`}
+                        effect='solid'
+                        arrowColor='#fff'
+                        className='skills-tooltip'
+                      >
+                        {work.desc}
+                      </ReactTooltip>
+                    )}{' '}
                   </>
-                ))
-              }
+                ))}
               </motion.div>
-
             </motion.div>
-          ))
-
-        }
+          ))}
         </div>
-
       </div>
     </div>
   )
 }
 
-export default AppWrap(Skills,'skills','app__whitebg')
+export default AppWrap(Skills, 'skills', 'app__whitebg')
