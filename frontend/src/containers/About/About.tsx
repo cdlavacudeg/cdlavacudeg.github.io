@@ -11,18 +11,37 @@ const About: React.FC = () => {
     imgUrl: string
   }
   const abouts: AboutItem[] = [
-    { title: 'Web Development', description: 'Iam a Web developer', imgUrl: images.about01 },
-    { title: 'Backend Development', description: 'Iam a Web developer', imgUrl: images.about02 },
-    { title: 'Python Development', description: 'Iam a Web developer', imgUrl: images.about03 },
-    { title: 'Node Development', description: 'Iam a Web developer', imgUrl: images.about04 },
+    {
+      title: 'Frontend Web Developer',
+      description:
+        'Client-side development of custom, responsive and modern websites using React, Sass and Redux',
+      imgUrl: images.about02,
+    },
+    {
+      title: 'Backend Web Developer',
+      description: 'Server-side development of REST API using nodejs, passport, jwt, mongodb.',
+      imgUrl: images.aboutBack,
+    },
+    {
+      title: 'Python Developer',
+      description: 'Development of web applications in Django and Dash',
+      imgUrl: images.aboutPython,
+    },
+    {
+      title: 'Engineer',
+      description:
+        'As an engineer I developed skills in problem solving, autonomous learning and \
+      interdisciplinary work.',
+      imgUrl: images.aboutEngi,
+    },
   ]
 
   return (
     <div id='about' className='app__about app__flex'>
       <h2 className='head-text'>
-        I Know That <span>Good Development</span>
+        Quality means doing it <span>right</span>
         <br />
-        means <span>Good Business</span>
+        when no one is <span>Looking</span> - Henry Ford
       </h2>
 
       <div className='app__profiles'>

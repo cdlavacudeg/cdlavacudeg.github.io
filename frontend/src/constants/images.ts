@@ -24,6 +24,9 @@ import about01 from '../assets/about01.png'
 import about02 from '../assets/about02.png'
 import about03 from '../assets/about03.png'
 import about04 from '../assets/about04.png'
+import aboutBack from '../assets/about-backend.jpg'
+import aboutPython from '../assets/aboutPython.png'
+import aboutEngi from '../assets/aboutEngineer.jpg'
 
 import profile from '../assets/profile.png'
 import circle from '../assets/circle.svg'
@@ -38,6 +41,9 @@ import bolt from '../assets/bolt.png'
 import nb from '../assets/nb.png'
 import skype from '../assets/skype.png'
 import spotify from '../assets/spotify.png'
+
+import interact from '../assets/interact-app.png'
+import lavcode from '../assets/lavcode.png'
 
 const images: { [key: string]: string } = {
   email,
@@ -65,6 +71,9 @@ const images: { [key: string]: string } = {
   about02,
   about03,
   about04,
+  aboutBack,
+  aboutPython,
+  aboutEngi,
   profile,
   circle,
   logo,
@@ -77,6 +86,8 @@ const images: { [key: string]: string } = {
   nb,
   skype,
   spotify,
+  interact,
+  lavcode
 }
 
 export default images

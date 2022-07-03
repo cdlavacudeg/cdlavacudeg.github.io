@@ -15,7 +15,7 @@ const scaleVariants = {
   },
 }
 
-const skillsBubles = [images.express, images.node, images.mongo]
+const skillsBubles = [images.react, images.node, images.mongo]
 
 const Header: React.FC = () => {
   return (

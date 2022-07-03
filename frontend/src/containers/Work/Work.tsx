@@ -5,7 +5,7 @@ import { images } from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import './Work.scss'
 
-const filters: string[] = ['Backend', 'Frontend', 'All']
+const filters: string[] = ['Backend', 'Frontend','Fullstack','MERN', 'All']
 interface WorkItem {
   title: string
   description: string
@@ -19,39 +19,22 @@ interface WorkItem {
 const portfolioItems: WorkItem[] = [
   {
     title: 'Interact App',
-    description: 'App educativa NoCountry',
+    description:
+      'Educatinal administration platform created for NoCountry',
     name: 'Backend Interact',
-    tags: ['Backend'],
-    imgUrl: images.about01,
-    projectLink: 'https://github.com/cdlavacudeg',
-    codeLink: 'https://github.com/cdlavacudeg',
+    tags: ['Fullstack', 'Backend','MERN', 'Fullstack'],
+    imgUrl: images.interact,
+    projectLink: 'https://interact-chi.vercel.app/',
+    codeLink: 'https://github.com/No-Country/C5-31',
   },
   {
-    title: 'Interact App',
-    description: 'App educativa NoCountry',
-    name: 'Backend Interact',
-    tags: ['Backend'],
-    imgUrl: images.about01,
-    projectLink: 'https://github.com/cdlavacudeg',
-    codeLink: 'https://github.com/cdlavacudeg',
-  },
-  {
-    title: 'Interact App',
-    description: 'App educativa NoCountry',
-    name: 'Backend Interact',
-    tags: ['Frontend'],
-    imgUrl: images.about01,
-    projectLink: 'https://github.com/cdlavacudeg',
-    codeLink: 'https://github.com/cdlavacudeg',
-  },
-  {
-    title: 'Interact App',
-    description: 'App educativa NoCountry',
-    name: 'Backend Interact',
-    tags: ['Backend'],
-    imgUrl: images.about01,
-    projectLink: 'https://github.com/cdlavacudeg',
-    codeLink: 'https://github.com/cdlavacudeg',
+    title: 'Lavcode App',
+    description: 'Personal Blog template project using Django',
+    name: 'Lavcode Blog',
+    tags: ['Fullstack'],
+    imgUrl: images.lavcode,
+    projectLink: 'https://crislav10.pythonanywhere.com/',
+    codeLink: 'https://github.com/cdlavacudeg/Blog_LavCode',
   },
 ]
 
@@ -83,7 +66,7 @@ const Work: React.FC = () => {
   return (
     <div id='work' className='app__work app__flex'>
       <h2 className='head-text'>
-        My Creative <span>Portfolio</span> Section
+        My Work <span>Portfolio</span> Section
       </h2>
 
       <div className='app__work-filter'>

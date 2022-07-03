@@ -25,9 +25,19 @@ interface ExperienceItem {
 
 const skillsList: SkillItem[] = [
   {
-    name: 'NodeJs',
+    name: 'MongoDB',
     bgColor: 'var(--primary-color)',
-    icon: images.node,
+    icon: images.mongo,
+  },
+  {
+    name: 'Express',
+    bgColor: 'var(--primary-color)',
+    icon: images.express,
+  },
+  {
+    name: 'React',
+    bgColor: 'var(--primary-color)',
+    icon: images.react,
   },
   {
     name: 'NodeJs',
@@ -35,50 +45,50 @@ const skillsList: SkillItem[] = [
     icon: images.node,
   },
   {
-    name: 'NodeJs',
+    name: 'git',
     bgColor: 'var(--primary-color)',
-    icon: images.node,
+    icon: images.git,
   },
   {
-    name: 'NodeJs',
+    name: 'Rest API',
     bgColor: 'var(--primary-color)',
-    icon: images.node,
+    icon: images.api,
+  },
+  {
+    name: 'Typescript',
+    bgColor: 'var(--primary-color)',
+    icon: images.typescript,
+  },
+  {
+    name: 'Sass',
+    bgColor: 'var(--primary-color)',
+    icon: images.sass,
+  },
+  {
+    name: 'Redux',
+    bgColor: 'var(--primary-color)',
+    icon: images.redux,
+  },
+  {
+    name: 'Python',
+    bgColor: 'var(--primary-color)',
+    icon: images.python,
   },
 ]
 
 const experienceList: ExperienceItem[] = [
   {
-    year: '2020',
+    year: '2022',
     works: [
       {
-        name: 'Frontend Developer',
-        company: 'Google',
-        desc: 'Frontend developer of a little app',
+        name: 'Backend Developer',
+        company: 'NoCountry',
+        desc: 'Backend developer of an educatinal platform',
       },
       {
-        name: 'Frontend Developer',
-        company: 'Google',
-        desc: 'Frontend developer of a little app',
-      },
-    ],
-  },
-  {
-    year: '2020',
-    works: [
-      {
-        name: 'Frontend Developer',
-        company: 'Google',
-        desc: 'Frontend developer of a little app',
-      },
-    ],
-  },
-  {
-    year: '2020',
-    works: [
-      {
-        name: 'Frontend Developer',
-        company: 'Google',
-        desc: 'Frontend developer of a little app',
+        name: 'Seft-taught wed developer',
+        company: 'Cdlavacudeg',
+        desc: '1 year selft-taught web developer',
       },
     ],
   },
