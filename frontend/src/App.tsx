@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { About, Footer, Header, Skills, Testimonial, Work } from './containers'
+import { About, Footer, Header, Skills, Work } from './containers'
 import { Navbar } from './components'
 import './App.scss'
 const App: React.FC = () => {
@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <About />
       <Work />
       <Skills />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Footer />
     </div>
   )

@@ -1,2 +1,10 @@
+# Portafolio Cristian Lavacude
+
+## Technologies
+
+- Typescript
+- React
+
+
 ## Link
-[portfolio design](https://xd.adobe.com/spec/6ebfeb86-6eeb-4b69-77dc-ecf4c4506bcc-188e/)
+[Inpiration](https://www.youtube.com/watch?v=3HNyXCPDQ7Q)
