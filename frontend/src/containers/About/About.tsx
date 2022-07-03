@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { images } from '../../constants'
 import './About.scss'
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 
 const About: React.FC = () => {
   interface AboutItem {
@@ -50,4 +50,4 @@ const About: React.FC = () => {
   )
 }
 
-export default AppWrap(About, 'about', 'app__whitebg')
+export default AppWrap(MotionWrap(About), 'about', 'app__whitebg')

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import ReactTooltip from 'react-tooltip'
 
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 import { images } from '../../constants'
 import './Skills.scss'
 
@@ -50,6 +50,11 @@ const experienceList: ExperienceItem[] = [
   {
     year: '2020',
     works: [
+      {
+        name: 'Frontend Developer',
+        company: 'Google',
+        desc: 'Frontend developer of a little app',
+      },
       {
         name: 'Frontend Developer',
         company: 'Google',
@@ -121,7 +126,7 @@ const Skills: React.FC = () => {
 
               <motion.div className='app__skills-exp-works'>
                 {exp.works.map((work, index) => (
-                  <>
+                  <React.Fragment key={index}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
@@ -133,7 +138,6 @@ const Skills: React.FC = () => {
                         showTooltip(false)
                         setTimeout(() => showTooltip(true), 0.01)
                       }}
-                      key={index}
                     >
                       <h4 className='bold-text'>{work.name}</h4>
                       <p className='p-text'>{work.company}</p>
@@ -148,7 +152,7 @@ const Skills: React.FC = () => {
                         {work.desc}
                       </ReactTooltip>
                     )}{' '}
-                  </>
+                  </React.Fragment>
                 ))}
               </motion.div>
             </motion.div>
@@ -159,4 +163,4 @@ const Skills: React.FC = () => {
   )
 }
 
-export default AppWrap(Skills, 'skills', 'app__whitebg')
+export default AppWrap(MotionWrap(Skills), 'skills', 'app__whitebg')

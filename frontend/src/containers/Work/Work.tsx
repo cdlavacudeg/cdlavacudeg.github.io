@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 import { images } from '../../constants'
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 import './Work.scss'
 
 const filters: string[] = ['Backend', 'Frontend', 'All']
@@ -157,4 +157,4 @@ const Work: React.FC = () => {
   )
 }
 
-export default AppWrap(Work, 'work', 'app__primarybg')
+export default AppWrap(MotionWrap(Work), 'work', 'app__primarybg')
