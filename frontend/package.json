@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "homepage":"https://cdlavacudeg.github.io/",
   "private": true,
   "dependencies": {
     "@types/node": "^16.11.41",
@@ -16,6 +17,8 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +53,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   }
 }
