@@ -5,7 +5,7 @@ import { images } from '../../constants'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import './Work.scss'
 
-const filters: string[] = ['Backend', 'Frontend','Fullstack','MERN', 'All']
+const filters: string[] = ['Backend', 'Frontend', 'Fullstack', 'MERN', 'All']
 interface WorkItem {
   title: string
   description: string
@@ -19,10 +19,9 @@ interface WorkItem {
 const portfolioItems: WorkItem[] = [
   {
     title: 'Interact App',
-    description:
-      'Educatinal administration platform created for NoCountry',
+    description: 'Educatinal administration platform created for NoCountry',
     name: 'Backend Interact',
-    tags: ['Fullstack', 'Backend','MERN', 'Fullstack'],
+    tags: ['Fullstack', 'Backend', 'MERN', 'Fullstack'],
     imgUrl: images.interact,
     projectLink: 'https://interact-chi.vercel.app/',
     codeLink: 'https://github.com/No-Country/C5-31',

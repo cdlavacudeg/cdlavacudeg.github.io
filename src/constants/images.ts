@@ -87,7 +87,7 @@ const images: { [key: string]: string } = {
   skype,
   spotify,
   interact,
-  lavcode
+  lavcode,
 }
 
 export default images
